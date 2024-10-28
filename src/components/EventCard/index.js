@@ -28,7 +28,7 @@ const EventCard = ({
 );
 
 EventCard.propTypes = {
-  imageSrc: PropTypes.string,
+  imageSrc: PropTypes.string.isRequired,
   imageAlt: PropTypes.string,
   date: PropTypes.instanceOf(Date).isRequired,
   title: PropTypes.string,
@@ -37,7 +37,6 @@ EventCard.propTypes = {
 };
 
 EventCard.defaultProps = {
-  imageSrc: "default-image-url.jpg",
   imageAlt: "image",
   small: false,
   title: ""
